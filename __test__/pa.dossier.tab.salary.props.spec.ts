@@ -39,7 +39,7 @@ describe("PA - Salary UI Properties Suite", function() {
     jsonProps.forEach(value => {
         describe("PA - Salary UI probability '"+(value * 100)+"%' of properties to be false ", function() {
 
-            const changeInJson = (id: string, obj: object): void => {
+            const changeBooleanValuesInJson = (id: string, obj: object): void => {
                 if(!obj){
                     return;
                 }
@@ -48,15 +48,18 @@ describe("PA - Salary UI Properties Suite", function() {
                   if (k === id) {
                     obj[k] = Math.random() >= value;
                   } else if (typeof v === "object") {
-                    changeInJson(id, v);
+                    changeBooleanValuesInJson(id, v);
                   }
                 }
             };
 
             beforeAll(async(done)=>{
-                changeInJson("showSection", visibilityJson);
-                changeInJson("visible", confJson);
-                changeInJson("visible", confLocJson);
+                changeBooleanValuesInJson("showTab", visibilityJson);
+                changeBooleanValuesInJson("showSection", visibilityJson);
+                changeBooleanValuesInJson("visible", confJson);
+                changeBooleanValuesInJson("editable", confJson);
+                changeBooleanValuesInJson("visible", confLocJson);
+                changeBooleanValuesInJson("editable", confLocJson);
 
                 await SessionStorageUtils.setItem("visibility_1001M4EMPLOYEE", JSON.stringify(visibilityJson));
                 await SessionStorageUtils.setItem("conf_1001M4EMPLOYEE", JSON.stringify(confJson));
@@ -74,21 +77,23 @@ describe("PA - Salary UI Properties Suite", function() {
                 expect(await pageTitleElem.getText()).toEqual("EMPLOYEE PORTFOLIO");
             });
             
-            it("Should load container Tabs", async()=>{
+            it("Should display container Tabs", async()=>{
                 await empInfoPage.waitFor_TabsAreDisplayed();
                 const containerTabs = await empInfoPage.getContainerTabs();
                 expect(await containerTabs.isDisplayed()).toBeTruthy();
             });
             
-            it("should load Tab Salary", async()=>{
+            it("should display Tab Salary", async()=>{
                 const tabSalaryElem = await empInfoPage.empInfoTabSalary.getElement_Tab();
                 expect(await tabSalaryElem.isDisplayed()).toBeTruthy();
             });
             
-            it("should load Tab Salary Container", async()=>{
+            it("should display Tab Salary Container", async()=>{
                 await empInfoPage.empInfoTabSalary.clickOn_Tab();
                 const tabSalaryContainerElem = await empInfoPage.empInfoTabSalary.getElement_TabContainer();
+                const buttonUpdateInformation = await empInfoPage.empInfoTabSalary.getElement_ButtonUpdateInformation();
                 expect(await tabSalaryContainerElem.isDisplayed()).toBeTruthy();
+                expect(await buttonUpdateInformation.isDisplayed()).toBeTruthy();
             });
 
             it("should not load console log errors",async()=>{

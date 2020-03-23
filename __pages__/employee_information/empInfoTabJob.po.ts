@@ -2,6 +2,6 @@ import { EmployeeInformationTab } from "./empInfoTab.po";
 
 export class EmployeeInformationTabJob extends EmployeeInformationTab{
     constructor() {
-        super("tabJob", "tabJob_container");
+        super("tabJob", "tabJob_container","btnAssistant_tabJob");
     }
 }
