@@ -1,5 +1,4 @@
 import { browser, element, by } from "protractor";
-
 import { BrowserUtil } from "../__m4utils__/m4Utils";
 
 export class Page {

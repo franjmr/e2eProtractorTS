@@ -37,6 +37,7 @@ describe("PA - Salary UI Properties Suite", function() {
     
     falseProbability.forEach(probability => {
         describe("PA - Salary UI probability '"+(probability * 100)+"%' of properties to be false ", function() {
+            
             beforeAll(async(done)=>{
                 JSON_Utils.setBooleanRandomValue("showTab", visibilityJson, probability);
                 JSON_Utils.setBooleanRandomValue("showSection", visibilityJson, probability);
