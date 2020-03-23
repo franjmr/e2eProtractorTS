@@ -1,0 +1,351 @@
+{
+    "tabPersonal": {
+      "showTab": true,
+      "sections": {
+        "ADDRESS": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_ADDRESS": {
+              "showSection": true
+            }
+          }
+        },
+        "ADDRESS_ES": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_ADDRESS": {
+              "showSection": true
+            }
+          }
+        },
+        "ADDRESS_FR": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_ADDRESS": {
+              "showSection": true
+            }
+          }
+        },
+        "ADDRESS_GLO": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_ADDRESS": {
+              "showSection": true
+            }
+          }
+        },
+        "ADDRESS_PE": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_ADDRESS": {
+              "showSection": true
+            }
+          }
+        },
+        "BANK_DATA": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_PERSON_BANK": {
+              "showSection": true
+            }
+          }
+        },
+        "BANK_DATA_GEN": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_PERSON_BANK": {
+              "showSection": true
+            }
+          }
+        },
+        "BANK_DATA_IBAN": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_PERSON_BANK": {
+              "showSection": true
+            }
+          }
+        },
+        "BANK_DATA_PE": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_PERSON_BANK": {
+              "showSection": true
+            }
+          }
+        },
+        "BIRTH": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_HR_NATIONALITY": {
+              "showSection": true
+            }
+          }
+        },
+        "CONNECTION_DATA": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_PERSON": {
+              "showSection": true
+            }
+          }
+        },
+        "CONTACTS": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_EMAIL": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_PHONE_FAX": {
+              "showSection": true
+            }
+          }
+        },
+        "HR_CONTACT_PERSON": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_HR_CONTACT": {
+              "showSection": true
+            }
+          }
+        },
+        "OTH_CONT_F_PERSON": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_OTH_CONT_F": {
+              "showSection": true
+            }
+          }
+        },
+        "OTHER_DATA": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_PERSON": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_MAR_STATS": {
+              "showSection": true
+            }
+          }
+        },
+        "OTHER_DOCUMENTS_PERSON": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "PLCO_PA_WZ_OTHER_DOCUMENTS": {
+              "showSection": true
+            }
+          }
+        },
+        "PERSONAL_INFO": {
+          "PLCO_PA_MN_INF_PERSON": {
+            "SRCO_PA_WZ_PERSON": {
+              "showSection": true
+            }
+          }
+        },
+        "MANAGE_DOCUMENT": {
+          "PLCO_MNG_DOC": {
+            "SCO_MT_HR_DOC": {
+              "showSection": true
+            }
+          }
+        },
+        "ADDITIONAL_INFORMATION": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "PLCO_PA_WZ_C_COMPLEMENTARY_DAT": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_C_BUFFER_FIELDS1": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_C_BUFFER_FIELDS2": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_C_BUFFER_FIELDS3": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_C_BUFFER_FIELDS4": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_C_BUFFER_FIELDS5": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_C_BUFFER_FIELDS6": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_C_BUFFER_FIELDS7": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_C_BUFFER_FIELDS8": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS1": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS10": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS11": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS12": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS13": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS14": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS15": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS16": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS17": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS2": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS3": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS4": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS5": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS6": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS7": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS8": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_H_L_BUFFER_FIELDS9": {
+              "showSection": true
+            },
+            "PLCO_PA_WZ_L_COMPLEMENTARY_DAT": {
+              "showSection": true
+            }
+          }
+        },
+        "DEPENDENTS_PERSON": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "SRCO_PA_WZ_FAMILY": {
+              "showSection": true
+            }
+          }
+        }
+      }
+    },
+    "tabJob": {
+      "showTab": true,
+      "sections": {
+        "BORROWED_MATERIAL": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "SRCO_PA_WZ_COMPANY_PROPERTY": {
+              "showSection": true
+            }
+          }
+        },
+        "CONTRACT_DATA": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "PLCO_PA_MN_H_HRP_WORK_TIME_PER": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_H_EMPLOYEE_TYPE": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_HR_CONTRACT": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_HR_COMMON_INFO": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_HR_PERIOD": {
+              "showSection": true
+            }
+          }
+        },
+        "DIRECT_RESPONSIBLE": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "PLCO_PA_WZ_HR_DIRECT_RESP": {
+              "showSection": true
+            }
+          }
+        },
+        "DISCIPLINARY_INCIDENTS": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "SRCO_PA_WZ_HR_PER_D_INCID": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_H_DISC_ACT": {
+              "showSection": true
+            }
+          }
+        },
+        "EMPLOYMENT_DATA": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "PLCO_PA_WZ_H_HR_FUNC_DEP": {
+              "showSection": false
+            },
+            "PLCO_PA_WZ_H_EMPLOYEE_GRADE": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_H_HR_LEGAL_ENTITY": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_HR_PERIOD": {
+              "showSection": true
+            }
+          }
+        },
+        "EXTERNAL_ORGANIZATION": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "SRCO_PA_WZ_HR_PERIOD": {
+              "showSection": true
+            }
+          }
+        },
+        "PROFESSIONAL_PREFERENCES": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "SRCO_PA_WZ_CR_PREFERENC": {
+              "showSection": true
+            }
+          }
+        },
+        "SCHEMES": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "SRCO_PA_WZ_H_HRP_SCHEME": {
+              "showSection": true
+            }
+          }
+        },
+        "TIME_ATTENDANCE": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "PLCO_PA_WZ_HR_PAY_FREQ": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_H_GTA_DATA": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_HR_THEOR_TIME": {
+              "showSection": true
+            }
+          }
+        },
+        "TRANSFERS": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "SRCO_PA_WZ_H_TRANSFER": {
+              "showSection": true
+            }
+          }
+        }
+      }
+    },
+    "tabSalary": {
+      "showTab": true,
+      "sections": {
+        "SALARY_DATA": {
+          "PLCO_PA_MN_HR_PERIOD": {
+            "PLCO_PA_WZ_H_SAL_STRUC": {
+              "showSection": true
+            },
+            "SRCO_PA_WZ_H_SAL_DATA": {
+              "showSection": true
+            }
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "inlineSourceMap": true,
+      "declaration": false,
+      "noImplicitAny": false,
+      "outDir": "__dist__",
+      "resolveJsonModule": true,
+      "esModuleInterop": true 
+    },
+    
+    "exclude": [
+      "node_modules",
+      "plugins.ts"
+    ]
+}
