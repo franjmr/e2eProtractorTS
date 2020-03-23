@@ -1,18 +1,17 @@
 import { browser, logging } from "protractor";
 import { M4JsapiUtils } from "../__m4utils__/m4JsapiUtils";
-import { SessionStorageUtils } from "../__m4utils__/m4Utils";
+import { SessionStorageUtils, BrowserUtil, JSON_Utils } from "../__m4utils__/m4Utils";
 import { EmployeeInformationPage } from "../__pages__/employee_information.po";
 import visibilityJson from "../__mock__/visibility.json";
 import confJson from "../__mock__/conf.json";
 import confLocJson from "../__mock__/confLoc.json";
-import { Level } from "selenium-webdriver/lib/logging";
 
 describe("PA - Salary UI Properties Suite", function() {
 
     let m4JsApiUtils: M4JsapiUtils;
     let server: string;
     let empInfoPage: EmployeeInformationPage;
-    let jsonProps: number[] = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
+    const falseProbability: number[] = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9];
     
     beforeAll(async(done)=>{
         jasmine.DEFAULT_TIMEOUT_INTERVAL = 120000;
@@ -36,36 +35,21 @@ describe("PA - Salary UI Properties Suite", function() {
         done();
     });
     
-    jsonProps.forEach(value => {
-        describe("PA - Salary UI probability '"+(value * 100)+"%' of properties to be false ", function() {
-
-            const changeBooleanValuesInJson = (id: string, obj: object): void => {
-                if(!obj){
-                    return;
-                }
-                
-                for (const [k, v] of Object.entries(obj)) {
-                  if (k === id) {
-                    obj[k] = Math.random() >= value;
-                  } else if (typeof v === "object") {
-                    changeBooleanValuesInJson(id, v);
-                  }
-                }
-            };
-
+    falseProbability.forEach(probability => {
+        describe("PA - Salary UI probability '"+(probability * 100)+"%' of properties to be false ", function() {
             beforeAll(async(done)=>{
-                changeBooleanValuesInJson("showTab", visibilityJson);
-                changeBooleanValuesInJson("showSection", visibilityJson);
-                changeBooleanValuesInJson("visible", confJson);
-                changeBooleanValuesInJson("editable", confJson);
-                changeBooleanValuesInJson("visible", confLocJson);
-                changeBooleanValuesInJson("editable", confLocJson);
+                JSON_Utils.setBooleanRandomValue("showTab", visibilityJson, probability);
+                JSON_Utils.setBooleanRandomValue("showSection", visibilityJson, probability);
+                JSON_Utils.setBooleanRandomValue("visible", confJson, probability);
+                JSON_Utils.setBooleanRandomValue("editable", confJson, probability);
+                JSON_Utils.setBooleanRandomValue("visible", confLocJson, probability);
+                JSON_Utils.setBooleanRandomValue("editable", confLocJson, probability);
 
                 await SessionStorageUtils.setItem("visibility_1001M4EMPLOYEE", JSON.stringify(visibilityJson));
                 await SessionStorageUtils.setItem("conf_1001M4EMPLOYEE", JSON.stringify(confJson));
                 await SessionStorageUtils.setItem("confLoc_1001M4EMPLOYEE", JSON.stringify(confLocJson));
                 
-                await browser.manage().logs().get('browser');
+                await BrowserUtil.cleanConsoleLog();
 
                 await empInfoPage.openAndWaitFor_PageIsReady();
                 
@@ -97,26 +81,8 @@ describe("PA - Salary UI Properties Suite", function() {
             });
 
             it("should not load console log errors",async()=>{
-                const browserLogs = await browser.manage().logs().get('browser');
-                const errors: string[] = [];
-
-                function getLogErrorMessage(value: logging.Entry){
-                    return new Promise( resolve =>{
-                        const _level = value.level;
-                        if(_level.name == Level.SEVERE.name){
-                            const _type = value.type;
-                            const _msg = value.message;
-                            console.log("LEVEL NAME "+_level.name + ". Type: "+_type+".Message: "+_msg);
-                            errors.push(_msg);
-                        }
-                        resolve(true);
-                    })
-                }
-                browserLogs.forEach(async (value: logging.Entry)=>{
-                    await getLogErrorMessage(value);
-                });
-
-                expect(errors.length).toEqual(0);
+                const browserConsoleLogErrors = await BrowserUtil.getConsoleLogError();
+                expect(browserConsoleLogErrors.length).toEqual(0);
             });
         });
     });
