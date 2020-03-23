@@ -6,7 +6,7 @@ import visibilityJson from "../__mock__/visibility.json";
 import confJson from "../__mock__/conf.json";
 import confLocJson from "../__mock__/confLoc.json";
 
-describe("PA - Logon and load page Suite", function() {
+describe("PA - Salary UI Suite", function() {
 
     let m4JsApiUtils: M4JsapiUtils;
     let server: string;

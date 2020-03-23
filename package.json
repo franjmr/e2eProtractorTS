@@ -14,7 +14,10 @@
   "scripts": {
     "debug": "node --inspect-brk ./node_modules/.bin/protractor conf.js",
     "pretest": "npm run tsc && npm run webdriver-update",
-    "test": "npm run pretest && protractor conf.js",
+    "posttest": "tsc --build --clean",
+    "test": "protractor conf.js",
+    "test:ui": "npm test -- --suite ui",
+    "test:props": "npm test -- --suite props",
     "tsc": "tsc",
     "webdriver-update": "webdriver-manager update --standalone=false --gecko=false"
   },
