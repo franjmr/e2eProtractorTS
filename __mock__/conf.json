@@ -3,7 +3,9 @@
        "SRCO_PA_WZ_ADDRESS":{
           "STD_ID_COUNTRY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"AF",
@@ -15,7 +17,9 @@
           },
           "STD_ID_LOCATION_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"0",
@@ -27,7 +31,9 @@
           },
           "SSP_BLOQUE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"4b",
@@ -39,7 +45,9 @@
           },
           "SSP_ESCALERA":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"5b",
@@ -51,7 +59,9 @@
           },
           "SSP_ID_SIGLA_DOMIC":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -63,7 +73,9 @@
           },
           "SSP_NUM_VIA":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -75,7 +87,9 @@
           },
           "SSP_PISO":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -87,7 +101,9 @@
           },
           "SSP_PUERTA":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"7b",
@@ -99,7 +115,9 @@
           },
           "STD_ADDRESS_LINE_1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -111,7 +129,9 @@
           },
           "STD_ADDRESS_LINE_2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"4a",
@@ -123,7 +143,9 @@
           },
           "STD_ID_GEO_DIV":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -135,7 +157,9 @@
           },
           "STD_ID_GEO_PLACE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -147,7 +171,9 @@
           },
           "STD_ID_SUB_GEO_DIV":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -159,7 +185,9 @@
           },
           "STD_ZIP_CODE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"7a",
@@ -171,7 +199,9 @@
           },
           "PLCO_BUREAU_DIST_FR":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -183,7 +213,9 @@
           },
           "PLCO_NOM_VOIE_FRA":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -195,7 +227,9 @@
           },
           "SCO_ID_REGION":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -207,7 +241,9 @@
           },
           "SME_ID_TIPO_VIVIENDA":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -219,7 +255,9 @@
           },
           "STD_ADDRESS_LINE_3":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"5a",
@@ -231,7 +269,9 @@
           },
           "STD_MAILING_CHECK":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -243,7 +283,9 @@
           },
           "PLCO_GB_ADDRESS_UNICODE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"8a",
@@ -255,7 +297,9 @@
           },
           "PLCO_NM_GEO_DIV":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"1a",
@@ -267,7 +311,9 @@
           },
           "SGE_NM_ORT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"2a",
@@ -279,7 +325,9 @@
           },
           "STD_ADDRESS_LINE_4":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"6a",
@@ -291,7 +339,9 @@
           },
           "PLCO_ID_TP_ZONA":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -303,7 +353,9 @@
           },
           "PLCO_INTERIOR_LOTE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -315,7 +367,9 @@
           },
           "PLCO_NUMERO_MANZANA":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -329,7 +383,9 @@
        "SRCO_PA_WZ_PERSON_BANK":{
           "ID_CURRENCY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"USD",
@@ -341,7 +397,9 @@
           },
           "PLCO_FL_RB_ACC_FORMAT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"0",
@@ -353,7 +411,9 @@
           },
           "SCO_ENTITLED":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"1c",
@@ -365,7 +425,9 @@
           },
           "SCO_ID_BANKTYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"01",
@@ -377,7 +439,9 @@
           },
           "SCO_ID_BANKUSE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"01",
@@ -389,7 +453,9 @@
           },
           "SCO_ID_PAYM_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"000",
@@ -401,7 +467,9 @@
           },
           "SCO_ACCOUNT_NUMBER":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -413,7 +481,9 @@
           },
           "SCO_ID_BANK_BRANCH":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"2c",
@@ -425,7 +495,9 @@
           },
           "SCO_GB_IBAN":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":"4c",
@@ -437,7 +509,9 @@
           },
           "PLCO_CCI":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -449,7 +523,9 @@
           },
           "PLCO_ID_BANK":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -461,7 +537,9 @@
           },
           "PLCO_ID_COMP_BANK":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -475,7 +553,9 @@
        "SRCO_PA_WZ_HR_NATIONALITY":{
           "STD_ID_COUNTRY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -489,7 +569,9 @@
        "SRCO_PA_WZ_PERSON":{
           "PLCO_HIST_LEGACY_ID":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -501,7 +583,9 @@
           },
           "PLCO_NETW_USERNAME":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -513,7 +597,9 @@
           },
           "PLCO_ID_BLOOD_GROUP":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -539,7 +625,9 @@
           },
           "SUS_ID_ETHNICITY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -565,7 +653,9 @@
           },
           "PLCO_GB_NAME_UNICODE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -577,7 +667,9 @@
           },
           "PLCO_SURNAME_2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -589,7 +681,9 @@
           },
           "SRCO_AGE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -615,7 +709,9 @@
           },
           "STD_ID_COUNTRY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -627,7 +723,9 @@
           },
           "STD_ID_GENDER":{
              "mandatory":1,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -639,7 +737,9 @@
           },
           "STD_ID_GEO_DIV":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -651,7 +751,9 @@
           },
           "STD_ID_SALUTATION":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -663,7 +765,9 @@
           },
           "STD_ID_SUB_GEO_DIV":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -675,7 +779,9 @@
           },
           "STD_N_FAMILY_NAME_1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -687,7 +793,9 @@
           },
           "STD_N_FIRST_NAME":{
              "mandatory":1,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -699,7 +807,9 @@
           },
           "STD_N_MAIDEN_NAME":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -711,7 +821,9 @@
           },
           "STD_N_USUAL_NAME":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -723,7 +835,9 @@
           },
           "SUK_OTHER_FORENAMES":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -737,7 +851,9 @@
        "SRCO_PA_WZ_EMAIL":{
           "STD_EMAIL":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -749,7 +865,9 @@
           },
           "STD_ID_LOCATION_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -763,7 +881,9 @@
        "SRCO_PA_WZ_PHONE_FAX":{
           "STD_ID_LINE_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -775,7 +895,9 @@
           },
           "STD_ID_LOCATION_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -787,7 +909,9 @@
           },
           "STD_INT_COUNTRY_CODE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -799,7 +923,9 @@
           },
           "STD_INT_REGION_CODE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -811,7 +937,9 @@
           },
           "STD_NAT_REGION_CODE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -823,7 +951,9 @@
           },
           "STD_PHONE":{
              "mandatory":1,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -837,7 +967,9 @@
        "SRCO_PA_WZ_HR_CONTACT":{
           "PLCO_EMAIL_1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -849,7 +981,9 @@
           },
           "PLCO_EMAIL_2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -861,7 +995,9 @@
           },
           "PLCO_NM_GEO_DIV":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -873,7 +1009,9 @@
           },
           "PLCO_NM_TOWN":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -885,7 +1023,9 @@
           },
           "SCO_ICE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -897,7 +1037,9 @@
           },
           "STD_ID_COUNTRY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -909,7 +1051,9 @@
           },
           "STD_ID_DEP_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -921,7 +1065,9 @@
           },
           "STD_ID_GEO_DIV":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -933,7 +1079,9 @@
           },
           "STD_ID_GEO_PLACE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -945,7 +1093,9 @@
           },
           "STD_ID_LINE_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -957,7 +1107,9 @@
           },
           "STD_ID_LINE_TYPE_2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -969,7 +1121,9 @@
           },
           "STD_ID_LOCATION_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -981,7 +1135,9 @@
           },
           "STD_ID_SUB_GEO_DIV":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -993,7 +1149,9 @@
           },
           "STD_INT_COUNTRY_CODE_1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1005,7 +1163,9 @@
           },
           "STD_INT_COUNTRY_CODE_2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1017,7 +1177,9 @@
           },
           "STD_INT_REGION_CODE_1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1029,7 +1191,9 @@
           },
           "STD_INT_REGION_CODE_2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1041,7 +1205,9 @@
           },
           "STD_MAIN_CONTACT":{
              "mandatory":1,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1053,7 +1219,9 @@
           },
           "STD_N_CONTACT":{
              "mandatory":1,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1065,7 +1233,9 @@
           },
           "STD_NAT_REGION_CODE_1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1077,7 +1247,9 @@
           },
           "STD_NAT_REGION_CODE_2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1089,7 +1261,9 @@
           },
           "STD_PHONE_NUMBER_1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1101,7 +1275,9 @@
           },
           "STD_PHONE_NUMBER_2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1113,7 +1289,9 @@
           },
           "SUK_ADDRESS_LINE_1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1125,7 +1303,9 @@
           },
           "SUK_ADDRESS_LINE_2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1137,7 +1317,9 @@
           },
           "SUK_ADDRESS_LINE_3":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1149,7 +1331,9 @@
           },
           "SUK_ADDRESS_LINE_4":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1161,7 +1345,9 @@
           },
           "SUK_ZIP_CODE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1189,7 +1375,9 @@
           },
           "SCO_ID_CONTACT_TYPE":{
              "mandatory":1,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1203,7 +1391,9 @@
        "SRCO_PA_WZ_MAR_STATS":{
           "STD_ID_MARITAL_STAT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1217,7 +1407,9 @@
        "PLCO_PA_WZ_OTHER_DOCUMENTS":{
           "PLCO_DESCRIPTION":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1229,7 +1421,9 @@
           },
           "PLCO_DESCRIPTION2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1241,7 +1435,9 @@
           },
           "PLCO_DT_EXPIRY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1253,7 +1449,9 @@
           },
           "PLCO_EXPEDITION_PLACE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1265,7 +1463,9 @@
           },
           "PLCO_GB_LEGAL":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1277,7 +1477,9 @@
           },
           "SCO_DT_EXPEDITION":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1289,7 +1491,9 @@
           },
           "SSP_ID_TP_DOC":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1301,7 +1505,9 @@
           },
           "STD_ID_COUNTRY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1317,7 +1523,9 @@
        "SCO_MT_HR_DOC":{
           "SCO_COMMENT_EMP":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"MULTI_VALUE",
+             "visible":true,
+             "editable":false,
+             "type":"MULTI_VALUE",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1329,7 +1537,9 @@
           },
           "SCO_DT_EMISSION":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1341,7 +1551,9 @@
           },
           "SCO_DT_VALID":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1353,7 +1565,9 @@
           },
           "SCO_ID_DOC":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1365,7 +1579,9 @@
           },
           "SCO_ID_DOC_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1381,7 +1597,9 @@
        "PLCO_PA_WZ_C_COMPLEMENTARY_DAT":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1393,7 +1611,9 @@
           },
           "PLCO_ID_FIELD_BUFFER10":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1405,7 +1625,9 @@
           },
           "PLCO_ID_FIELD_BUFFER2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1417,7 +1639,9 @@
           },
           "PLCO_ID_FIELD_BUFFER3":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1429,7 +1653,9 @@
           },
           "PLCO_ID_FIELD_BUFFER4":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1441,7 +1667,9 @@
           },
           "PLCO_ID_FIELD_BUFFER5":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1453,7 +1681,9 @@
           },
           "PLCO_ID_FIELD_BUFFER6":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1465,7 +1695,9 @@
           },
           "PLCO_ID_FIELD_BUFFER7":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1477,7 +1709,9 @@
           },
           "PLCO_ID_FIELD_BUFFER8":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1489,7 +1723,9 @@
           },
           "PLCO_ID_FIELD_BUFFER9":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1503,7 +1739,9 @@
        "PLCO_PA_WZ_H_C_BUFFER_FIELDS1":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1517,7 +1755,9 @@
        "PLCO_PA_WZ_H_C_BUFFER_FIELDS2":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1531,7 +1771,9 @@
        "PLCO_PA_WZ_H_C_BUFFER_FIELDS3":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1545,7 +1787,9 @@
        "PLCO_PA_WZ_H_C_BUFFER_FIELDS4":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1559,7 +1803,9 @@
        "PLCO_PA_WZ_H_C_BUFFER_FIELDS5":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1573,7 +1819,9 @@
        "PLCO_PA_WZ_H_C_BUFFER_FIELDS6":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1587,7 +1835,9 @@
        "PLCO_PA_WZ_H_C_BUFFER_FIELDS7":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1601,7 +1851,9 @@
        "PLCO_PA_WZ_H_C_BUFFER_FIELDS8":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1615,7 +1867,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS1":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1629,7 +1883,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS10":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1643,7 +1899,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS11":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1657,7 +1915,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS12":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1671,7 +1931,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS13":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1685,7 +1947,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS14":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1699,7 +1963,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS15":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1713,7 +1979,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS16":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1727,7 +1995,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS17":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1741,7 +2011,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS2":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1755,7 +2027,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS3":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1769,7 +2043,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS4":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1783,7 +2059,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS5":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1797,7 +2075,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS6":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1811,7 +2091,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS7":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1825,7 +2107,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS8":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1839,7 +2123,9 @@
        "PLCO_PA_WZ_H_L_BUFFER_FIELDS9":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1853,7 +2139,9 @@
        "PLCO_PA_WZ_L_COMPLEMENTARY_DAT":{
           "PLCO_ID_FIELD_BUFFER1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1865,7 +2153,9 @@
           },
           "PLCO_ID_FIELD_BUFFER10":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1877,7 +2167,9 @@
           },
           "PLCO_ID_FIELD_BUFFER11":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1889,7 +2181,9 @@
           },
           "PLCO_ID_FIELD_BUFFER12":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1901,7 +2195,9 @@
           },
           "PLCO_ID_FIELD_BUFFER13":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1913,7 +2209,9 @@
           },
           "PLCO_ID_FIELD_BUFFER14":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1925,7 +2223,9 @@
           },
           "PLCO_ID_FIELD_BUFFER15":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1937,7 +2237,9 @@
           },
           "PLCO_ID_FIELD_BUFFER16":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1949,7 +2251,9 @@
           },
           "PLCO_ID_FIELD_BUFFER17":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1961,7 +2265,9 @@
           },
           "PLCO_ID_FIELD_BUFFER18":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1973,7 +2279,9 @@
           },
           "PLCO_ID_FIELD_BUFFER19":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1985,7 +2293,9 @@
           },
           "PLCO_ID_FIELD_BUFFER2":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -1997,7 +2307,9 @@
           },
           "PLCO_ID_FIELD_BUFFER20":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2009,7 +2321,9 @@
           },
           "PLCO_ID_FIELD_BUFFER3":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2021,7 +2335,9 @@
           },
           "PLCO_ID_FIELD_BUFFER4":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2033,7 +2349,9 @@
           },
           "PLCO_ID_FIELD_BUFFER5":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2045,7 +2363,9 @@
           },
           "PLCO_ID_FIELD_BUFFER6":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2057,7 +2377,9 @@
           },
           "PLCO_ID_FIELD_BUFFER7":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2069,7 +2391,9 @@
           },
           "PLCO_ID_FIELD_BUFFER8":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2081,7 +2405,9 @@
           },
           "PLCO_ID_FIELD_BUFFER9":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2095,7 +2421,9 @@
        "SRCO_PA_WZ_COMPANY_PROPERTY":{
           "STD_DT_EXPECTED_RE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2107,7 +2435,9 @@
           },
           "STD_ID_PROPERTY_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2119,7 +2449,9 @@
           },
           "STD_NUMBER_PROPERTY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2133,7 +2465,9 @@
        "PLCO_PA_MN_H_HRP_WORK_TIME_PER":{
           "PLCO_PERCEN":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2147,7 +2481,9 @@
        "SRCO_PA_WZ_H_EMPLOYEE_TYPE":{
           "SCO_ID_EMPLOYEE_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2161,7 +2497,9 @@
        "SRCO_PA_WZ_HR_CONTRACT":{
           "PLCO_ID_CONTRACT_REASON":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2173,7 +2511,9 @@
           },
           "PLCO_ID_REPLACEMENT_REASONS":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2185,7 +2525,9 @@
           },
           "SCO_DT_EXPECTED_END":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2225,7 +2567,9 @@
           },
           "STD_ID_HR_IMPLIED":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2239,7 +2583,9 @@
        "SRCO_PA_WZ_HR_COMMON_INFO":{
           "SCO_DT_START_WORK_LIFE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2253,7 +2599,9 @@
        "SRCO_PA_WZ_HR_PERIOD":{
           "SSP_FEC_ANTIGUEDAD":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2265,7 +2613,9 @@
           },
           "PLCO_DT_END_ONBOARDING":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2277,7 +2627,9 @@
           },
           "PLCO_DT_ONBOARDING":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2303,7 +2655,9 @@
           },
           "STD_DT_START":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2315,7 +2669,9 @@
           },
           "STD_ID_HR_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2327,7 +2683,9 @@
           },
           "STD_ID_HRP_START_REASON":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2339,7 +2697,9 @@
           },
           "STD_KEY_EMPLOYEE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2351,7 +2711,9 @@
           },
           "STD_STRATEGIC_EMP":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2363,7 +2725,9 @@
           },
           "STD_ID_EXTERNAL_ORG":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2375,7 +2739,9 @@
           },
           "STD_DT_END":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2387,7 +2753,9 @@
           },
           "STD_ID_HRP_END_REASON":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2399,7 +2767,9 @@
           },
           "SUK_LAST_WK_DT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2411,7 +2781,9 @@
           },
           "SUK_TERM_RESIG_DT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2425,7 +2797,9 @@
        "SRCO_PA_WZ_FAMILY":{
           "PLCO_DEPENDENT_CERT_DETAIL":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2437,7 +2811,9 @@
           },
           "PLCO_DT_END_TUT_LEG":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2449,7 +2825,9 @@
           },
           "PLCO_DT_EXPIRATION":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2475,7 +2853,9 @@
           },
           "PLCO_ID_END_REASON_DEP":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2487,7 +2867,9 @@
           },
           "PLCO_ID_TYPE_CERT_DEP":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2513,7 +2895,9 @@
           },
           "SCO_DT_EXPEDITION":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2525,7 +2909,9 @@
           },
           "SCO_EXPEDITION_PLACE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2537,7 +2923,9 @@
           },
           "SCO_GB_LEGAL":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2549,7 +2937,9 @@
           },
           "SCO_STUDENT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2561,7 +2951,9 @@
           },
           "SSP_CALC_IRPF":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2573,7 +2965,9 @@
           },
           "SSP_COMPUTO_ENTERO":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2585,7 +2979,9 @@
           },
           "SSP_CONV_DESCENDIENTES":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2597,7 +2993,9 @@
           },
           "SSP_ID_MINUSVALIA":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2609,7 +3007,9 @@
           },
           "SSP_ID_TP_DOC":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2621,7 +3021,9 @@
           },
           "SSP_IRPF_ADOPTADO":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2633,7 +3035,9 @@
           },
           "SSP_IRPF_FECHA_ADOPCION":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2659,7 +3063,9 @@
           },
           "STD_HANDICAP":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2671,7 +3077,9 @@
           },
           "STD_ID_DEP_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2683,7 +3091,9 @@
           },
           "STD_ID_GENDER":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2695,7 +3105,9 @@
           },
           "STD_N_FAMILY_NAME_1":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2707,7 +3119,9 @@
           },
           "STD_N_FIRST_NAME":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2763,7 +3177,9 @@
        "PLCO_PA_WZ_HR_DIRECT_RESP":{
           "SCO_ID_TYPE_RESP":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2775,7 +3191,9 @@
           },
           "STD_ID_HR_RESP":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2789,7 +3207,9 @@
        "SRCO_PA_WZ_HR_PER_D_INCID":{
           "STD_DT_REPORTED":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2801,7 +3221,9 @@
           },
           "STD_ID_HR_IMPLIED":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2813,7 +3235,9 @@
           },
           "STD_ID_INCIDENT_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2827,7 +3251,9 @@
        "SRCO_PA_WZ_H_DISC_ACT":{
           "STD_ID_ACT_END_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2839,7 +3265,9 @@
           },
           "STD_ID_ACTION_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2869,7 +3297,9 @@
        "PLCO_PA_WZ_H_EMPLOYEE_GRADE":{
           "SCO_ID_LEVEL_VALUE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2883,7 +3313,9 @@
        "SRCO_PA_WZ_H_HR_LEGAL_ENTITY":{
           "PLCO_ID_PAY_LEG_ENT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2895,7 +3327,9 @@
           },
           "SCO_ID_LEG_ENT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2909,7 +3343,9 @@
        "SRCO_PA_WZ_CR_PREFERENC":{
           "PLCO_CHK_TRANSFER_DONE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2921,7 +3357,9 @@
           },
           "PLCO_CHK_VISIBLE_MSS":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2933,7 +3371,9 @@
           },
           "PLCO_MANAGER_COMMENT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2945,7 +3385,9 @@
           },
           "SCO_CK_NAT_INT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2957,7 +3399,9 @@
           },
           "SCO_COMMENT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2969,7 +3413,9 @@
           },
           "SCO_PREF_PRIORITY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2981,7 +3427,9 @@
           },
           "SCO_PREFERENCES":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -2993,7 +3441,9 @@
           },
           "STD_ID_COUNTRY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3005,7 +3455,9 @@
           },
           "STD_ID_GEO_DIV":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3017,7 +3469,9 @@
           },
           "STD_ID_JOB_CODE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3029,7 +3483,9 @@
           },
           "STD_ID_SUB_GEO_DIV":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3041,7 +3497,9 @@
           },
           "STD_ID_WORK_LOCATION":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3053,7 +3511,9 @@
           },
           "STD_ID_WORK_UNIT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3067,7 +3527,9 @@
        "PLCO_PA_WZ_H_SAL_STRUC":{
           "HCO_CR_SAL_STRC_ID":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3123,7 +3585,9 @@
           },
           "SCO_BNFT_LEG_PER":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3135,7 +3599,9 @@
           },
           "SCO_COT_EMP":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3233,7 +3699,9 @@
        "SRCO_PA_WZ_H_HRP_SCHEME":{
           "SCO_ID_ENTITLEMENT_TYPE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3245,7 +3713,9 @@
           },
           "SCO_ID_SCHEME":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3259,7 +3729,9 @@
        "PLCO_PA_WZ_H_HR_LEGAL_END_REA":{
           "PLCO_ID_HRP_LEGAL_END_REASON":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3273,7 +3745,9 @@
        "PLCO_PA_RECONT":{
           "SCO_ID_REHIRE_STATUS":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3285,7 +3759,9 @@
           },
           "SCO_REHIRE_COMMENT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3299,7 +3775,9 @@
        "PLCO_PA_WZ_HR_PAY_FREQ":{
           "PLCO_ID_PAY_FREQUENCY":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3313,7 +3791,9 @@
        "SRCO_PA_WZ_H_GTA_DATA":{
           "PLCO_WITH_VIRTUAL_CLOCK":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3325,7 +3805,9 @@
           },
           "SCO_CARD_NUMBER":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3337,7 +3819,9 @@
           },
           "SCO_CLOCKINOUT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3349,7 +3833,9 @@
           },
           "SCO_DECLARATIVE":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3361,7 +3847,9 @@
           },
           "SCO_GTA_MANAGEMENT":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3373,7 +3861,9 @@
           },
           "SCO_ID_CLOCK_MACHINE_GRP":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3385,7 +3875,9 @@
           },
           "SCO_MANAGEMENT_BY_DAYS":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3397,7 +3889,9 @@
           },
           "SCO_TIMESHEET_MONTH":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3411,7 +3905,9 @@
        "SRCO_PA_WZ_HR_THEOR_TIME":{
           "SCO_ID_REF_MOD":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3425,7 +3921,9 @@
        "SRCO_PA_WZ_H_TRANSFER":{
           "SCO_ID_LU_TRANSFER":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,
@@ -3437,7 +3935,9 @@
           },
           "SCO_ID_TRANSFER_CN":{
              "mandatory":0,
-             "visible":true,             "editable":false,             "type":"",
+             "visible":true,
+             "editable":false,
+             "type":"",
              "value":null,
              "valueAux":null,
              "default":null,

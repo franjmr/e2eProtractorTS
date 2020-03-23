@@ -35,8 +35,26 @@ describe("PA - Salary UI Properties Suite", function() {
     
     jsonProps.forEach(name => {
         describe(name, function() {
-        
+
+            const changeInJson = (id: string, value: boolean, obj: object): void => {
+                if(!obj){
+                    return;
+                }
+                
+                for (const [k, v] of Object.entries(obj)) {
+                  if (k === id) {
+                    obj[k] = value;
+                  } else if (typeof v === "object") {
+                    changeInJson(id, value, v);
+                  }
+                }
+            };
+
             beforeAll(async(done)=>{
+                changeInJson("showSection", false, visibilityJson)
+                changeInJson("visible", false, confJson)
+                changeInJson("visible", false, confLocJson)
+
                 await SessionStorageUtils.setItem("visibility_1001M4EMPLOYEE", JSON.stringify(visibilityJson));
                 await SessionStorageUtils.setItem("conf_1001M4EMPLOYEE", JSON.stringify(confJson));
                 await SessionStorageUtils.setItem("confLoc_1001M4EMPLOYEE", JSON.stringify(confLocJson));
