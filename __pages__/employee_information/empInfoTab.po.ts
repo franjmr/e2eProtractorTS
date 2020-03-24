@@ -31,6 +31,11 @@ export class EmployeeInformationTab {
         await BrowserUtil.element_WaitUntilBeClickable(this.elemTab);
         await this.elemTab.click();
     }
+
+    async clickOn_ButtonUpdateInformation(): Promise<void> {
+        await BrowserUtil.element_WaitUntilBeClickable(this.elemButtonAssistant);
+        await this.elemButtonAssistant.click();
+    }
     
     async getElement_Tab(): Promise<WebElement> {
         await this.waitForIsDisplayed_Tab();
