@@ -1,4 +1,4 @@
-import { browser, logging } from "protractor";
+import { browser, logging, ElementFinder, ExpectedConditions, element } from "protractor";
 import { M4JsapiUtils } from "../__m4utils__/m4JsapiUtils";
 import { SessionStorageUtils, BrowserUtil, JSON_Utils } from "../__m4utils__/m4Utils";
 import { EmployeeInformationPage } from "../__pages__/employee_information.po";
@@ -82,10 +82,32 @@ describe("PA - Salary UI Properties Suite", function() {
                 expect(await buttonUpdateInformation.isDisplayed()).toBeTruthy();
             });
 
+            it("should interact with update data popup", async(done)=>{
+                await empInfoPage.empInfoTabSalary.clickOn_ButtonUpdateInformation();
+                await empInfoPage.empInfoTabSalary.popupUpdateInformation.waitForm_PopUpReady();
+                await empInfoPage.empInfoTabSalary.popupUpdateInformation.clickOn_WidgetSelectAssistantLeft();
+                const options = await empInfoPage.empInfoTabSalary.popupUpdateInformation.getElems_WidgetSelectListOptionsAssistantLeft()
+                
+                for(let optIdx = 0; optIdx < options.length; optIdx++) {
+                    const elem = options[optIdx];
+
+                    BrowserUtil.element_WaitUntilBeClickable(elem);
+                    await elem.click();
+                    await empInfoPage.waitForUntil_PageIsReady();
+                    await empInfoPage.empInfoTabSalary.popupUpdateInformation.getElem_AssistanteRigthContent();
+                    
+                    const actions = await empInfoPage.empInfoTabSalary.popupUpdateInformation.getElems_BlockActionContent();
+                    expect(actions.length).toBeGreaterThanOrEqual(0);
+                }
+
+                done();
+            });
+
             it("should not load console log errors",async()=>{
                 const browserConsoleLogErrors = await BrowserUtil.getConsoleLogError();
                 expect(browserConsoleLogErrors.length).toEqual(0);
             });
+
         });
     });
 });
