@@ -32,7 +32,9 @@ export class PopupUpdateData {
 
     async click_OptionHtmlSelectAsistantLeft(optionValue: string): Promise<void>{
         const htmlSelect = await this.getElem_HtmlSelectAssistantLeft();
-        htmlSelect.element(by.cssContainingText('option', optionValue)).click();
+        const option = htmlSelect.element(by.cssContainingText('option', optionValue));
+        BrowserUtil.element_WaitUntilBeClickable(option);
+        option.click();
     }
 
     async getElem_BlockActionContent(){
