@@ -77,7 +77,7 @@ describe("PA - Salary UI Properties Suite", function() {
                 expect(await buttonUpdateInformation.isDisplayed()).toBeTruthy();
             });
 
-            xit("should interact with update data popup", async()=>{
+            it("should interact with update data popup", async()=>{
                 await empInfoPage.empInfoTabSalary.clickOn_ButtonUpdateInformation();
                 await empInfoPage.empInfoTabSalary.popupUpdateInformation.waitForm_PopUpReady();
                 await empInfoPage.empInfoTabSalary.popupUpdateInformation.clickOn_WidgetSelectAssistantLeft();
@@ -96,7 +96,7 @@ describe("PA - Salary UI Properties Suite", function() {
                 }
             });
 
-            it("should not load console log errors",async()=>{
+            it("should not load console log errors", async()=>{
                 const browserConsoleLogErrors = await BrowserUtil.getConsoleLogError();
                 expect(browserConsoleLogErrors.length).toEqual(0);
             });
