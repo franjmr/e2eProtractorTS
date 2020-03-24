@@ -46,7 +46,6 @@ describe("PA - Salary UI Properties Suite", function() {
                 
                 await BrowserUtil.cleanConsoleLog();
                 await empInfoPage.openAndWaitFor_PageIsReady();
-                
             });
 
             it("Should load Employee Information Page", async()=>{
@@ -54,18 +53,18 @@ describe("PA - Salary UI Properties Suite", function() {
                 expect(await pageTitleElem.getText()).toEqual("EMPLOYEE PORTFOLIO");
             });
             
-            xit("Should display container Tabs", async()=>{
+            it("Should display container Tabs", async()=>{
                 await empInfoPage.waitFor_TabsAreDisplayed();
                 const containerTabs = await empInfoPage.getContainerTabs();
                 expect(await containerTabs.isDisplayed()).toBeTruthy();
             });
             
-            xit("should display Tab Salary", async()=>{
+            it("should display Tab Salary", async()=>{
                 const tabSalaryElem = await empInfoPage.empInfoTabSalary.getElement_Tab();
                 expect(await tabSalaryElem.isDisplayed()).toBeTruthy();
             });
             
-            xit("When user click on Tab Salary should load Tab Salary Container", async()=>{
+            it("When user click on Tab Salary should load Tab Salary Container", async()=>{
                 await empInfoPage.empInfoTabSalary.clickOn_Tab();
                 const tabSalaryCntnr = await empInfoPage.empInfoTabSalary.getElement_TabContainer();
                 const tabSalaryCntnrOtherElem = await empInfoPage.empInfoTabSalary.getElement_TabContainerOtherItems();
@@ -73,7 +72,7 @@ describe("PA - Salary UI Properties Suite", function() {
                 expect(await tabSalaryCntnrOtherElem.isDisplayed()).toBeTruthy();
             });
 
-            xit("should display button to update information", async()=>{
+            it("should display button to update information", async()=>{
                 const buttonUpdateInformation = await empInfoPage.empInfoTabSalary.getElement_ButtonUpdateInformation();
                 expect(await buttonUpdateInformation.isDisplayed()).toBeTruthy();
             });
@@ -97,7 +96,7 @@ describe("PA - Salary UI Properties Suite", function() {
                 }
             });
 
-            xit("should not load console log errors",async()=>{
+            it("should not load console log errors",async()=>{
                 const browserConsoleLogErrors = await BrowserUtil.getConsoleLogError();
                 expect(browserConsoleLogErrors.length).toEqual(0);
             });
