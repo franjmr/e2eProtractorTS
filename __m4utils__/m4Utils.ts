@@ -16,7 +16,6 @@ export class BrowserUtil {
     };
     
     static async element_WaitUntilBeClickable(element: ElementFinder) {
-        await this.element_WaitUntilReady(element);
         await browser.wait(ExpectedConditions.elementToBeClickable(element), 60000);
     }
 
