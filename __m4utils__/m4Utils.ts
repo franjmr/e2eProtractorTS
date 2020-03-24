@@ -8,13 +8,18 @@ export class BrowserUtil {
     static async element_WaitUntilReady(element: ElementFinder) {
         await browser.wait(ExpectedConditions.presenceOf(element), 60000);
         await browser.wait(ExpectedConditions.visibilityOf(element), 60000);
-    };
+    }
 
     static async element_WaitUntilNotInDom(element: ElementFinder) {
         await browser.wait(ExpectedConditions.stalenessOf(element), 60000);
         await browser.wait(ExpectedConditions.invisibilityOf(element), 60000);
     };
     
+    static async element_WaitUntilBeClickable(element: ElementFinder) {
+        await this.element_WaitUntilReady(element);
+        await browser.wait(ExpectedConditions.elementToBeClickable(element), 60000);
+    }
+
     static getEnv(): Environment {
         const baseUrl = browser.params.baseUrl;
 
