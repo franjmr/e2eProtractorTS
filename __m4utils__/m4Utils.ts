@@ -4,7 +4,7 @@ import { Level } from 'selenium-webdriver/lib/logging';
 
 export class BrowserUtil {
 
-    private static TIMEOUT_DEFAULT = 10000;
+    private static TIMEOUT_DEFAULT = 60000;
 
     constructor() {}
 
@@ -12,6 +12,10 @@ export class BrowserUtil {
         await browser.wait(ExpectedConditions.presenceOf(element), timeoutMillis? timeoutMillis: BrowserUtil.TIMEOUT_DEFAULT);
         await browser.wait(ExpectedConditions.visibilityOf(element), timeoutMillis? timeoutMillis: BrowserUtil.TIMEOUT_DEFAULT);
     }
+
+    static async element_WaitUntilInDom(element: ElementFinder, timeoutMillis?: number): Promise<void> {
+        await browser.wait(ExpectedConditions.presenceOf(element), timeoutMillis? timeoutMillis: BrowserUtil.TIMEOUT_DEFAULT);
+    };
 
     static async element_WaitUntilNotInDom(element: ElementFinder, timeoutMillis?: number): Promise<void> {
         await browser.wait(ExpectedConditions.stalenessOf(element), timeoutMillis? timeoutMillis: BrowserUtil.TIMEOUT_DEFAULT);

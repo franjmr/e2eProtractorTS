@@ -27,7 +27,7 @@ export class Page {
         await this.waitForUntil_PageIsReady();
     }
 
-    async waitForUntil_PageIsReady(): Promise<void>{
-        await BrowserUtil.element_WaitUntilReady(element(by.css(".layerLock.hide")), 60000);
+    async waitForUntil_PageIsReady(): Promise<void>{    
+        await BrowserUtil.element_WaitUntilInDom(element(by.css("div.layerLock.hide")));
     }
 }
