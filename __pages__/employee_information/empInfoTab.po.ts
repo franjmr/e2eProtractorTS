@@ -5,13 +5,15 @@ import { BrowserUtil } from "../../__m4utils__/m4Utils";
 
 export class EmployeeInformationTab {
 
-    elemTab: ElementFinder;
-    elemTabContainer: ElementFinder;
-    elemButtonAssistant:  ElementFinder
+    private elemTab: ElementFinder;
+    private elemTabContainer: ElementFinder;
+    private elemTabContainerOtherItems: ElementFinder;
+    private elemButtonAssistant:  ElementFinder
 
-    constructor(idTab: string, idTabContainder: string, idButtonAssistant: string) {
+    constructor(idTab: string, idTabContainder: string, elemTabContainerOtherItems: string, idButtonAssistant: string) {
         this.elemTab = element(by.id(idTab));
         this.elemTabContainer = element(by.id(idTabContainder));
+        this.elemTabContainerOtherItems = element(by.id(elemTabContainerOtherItems));
         this.elemButtonAssistant = element(by.id(idButtonAssistant));
     }
 
@@ -21,6 +23,10 @@ export class EmployeeInformationTab {
 
     async waitForIsDisplayed_TabContainer(): Promise<void> {
         await BrowserUtil.element_WaitUntilReady(this.elemTabContainer);
+    }
+
+    async waitForIsDisplayed_TabContainerOtherItems(): Promise<void> {
+        await BrowserUtil.element_WaitUntilReady(this.elemTabContainerOtherItems);
     }
 
     async waitForIsDisplayed_ButtonUpdateInformation(): Promise<void> {
@@ -47,7 +53,13 @@ export class EmployeeInformationTab {
         return this.elemTabContainer;
     }
 
+    async getElement_TabContainerOtherItems(): Promise<WebElement> {
+        await this.waitForIsDisplayed_TabContainerOtherItems();
+        return this.elemTabContainerOtherItems;
+    }
+
     async getElement_ButtonUpdateInformation(): Promise<WebElement> {
+        await this.waitForIsDisplayed_TabContainerOtherItems();
         await this.waitForIsDisplayed_ButtonUpdateInformation();
         return this.elemButtonAssistant;
     }

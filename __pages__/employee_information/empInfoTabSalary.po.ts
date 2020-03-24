@@ -5,7 +5,7 @@ export class EmployeeInformationTabSalary extends EmployeeInformationTab{
     popupUpdateInformation: PopupUpdateData;
     
     constructor() {
-        super("tabSalary", "tabSalary_container", "btnAssistant_tabSalary");
+        super("tabSalary", "tabSalary_container", "containertabSalaryOtherItems", "btnAssistant_tabSalary");
         this.popupUpdateInformation = new PopupUpdateData();
     }
 }

@@ -1,10 +1,11 @@
-import { browser, logging, ElementFinder, ExpectedConditions, element } from "protractor";
+import { browser } from "protractor";
 import { M4JsapiUtils } from "../__m4utils__/m4JsapiUtils";
 import { SessionStorageUtils, BrowserUtil, JSON_Utils } from "../__m4utils__/m4Utils";
 import { EmployeeInformationPage } from "../__pages__/employee_information.po";
 import visibilityJson from "../__mock__/visibility.json";
 import confJson from "../__mock__/conf.json";
 import confLocJson from "../__mock__/confLoc.json";
+import { Browser } from "selenium-webdriver";
 
 describe("PA - Salary UI Properties Suite", function() {
 
@@ -75,14 +76,22 @@ describe("PA - Salary UI Properties Suite", function() {
             });
             
             it("should display Tab Salary Container", async()=>{
+                await browser.sleep(5000);
                 await empInfoPage.empInfoTabSalary.clickOn_Tab();
-                const tabSalaryContainerElem = await empInfoPage.empInfoTabSalary.getElement_TabContainer();
+                const tabSalaryCntnr = await empInfoPage.empInfoTabSalary.getElement_TabContainer();
+                const tabSalaryCntnrOtherElem = await empInfoPage.empInfoTabSalary.getElement_TabContainerOtherItems();
+                expect(await tabSalaryCntnr.isDisplayed()).toBeTruthy();
+                expect(await tabSalaryCntnrOtherElem.isDisplayed()).toBeTruthy();
+            });
+
+            it("should display button to update information", async()=>{
+                await browser.sleep(5000);
                 const buttonUpdateInformation = await empInfoPage.empInfoTabSalary.getElement_ButtonUpdateInformation();
-                expect(await tabSalaryContainerElem.isDisplayed()).toBeTruthy();
                 expect(await buttonUpdateInformation.isDisplayed()).toBeTruthy();
             });
 
             it("should interact with update data popup", async(done)=>{
+                await browser.sleep(5000);
                 await empInfoPage.empInfoTabSalary.clickOn_ButtonUpdateInformation();
                 await empInfoPage.empInfoTabSalary.popupUpdateInformation.waitForm_PopUpReady();
                 await empInfoPage.empInfoTabSalary.popupUpdateInformation.clickOn_WidgetSelectAssistantLeft();
