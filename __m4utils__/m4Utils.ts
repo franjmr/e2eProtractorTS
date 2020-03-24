@@ -3,20 +3,18 @@ import { logging } from 'selenium-webdriver';
 import { Level } from 'selenium-webdriver/lib/logging';
 
 export class BrowserUtil {
-    constructor() {
-    }
+    constructor() {}
 
     static async element_WaitUntilReady(element: ElementFinder) {
         await browser.wait(ExpectedConditions.presenceOf(element), 60000);
         await browser.wait(ExpectedConditions.visibilityOf(element), 60000);
     };
 
-
     static async element_WaitUntilNotInDom(element: ElementFinder) {
         await browser.wait(ExpectedConditions.stalenessOf(element), 60000);
         await browser.wait(ExpectedConditions.invisibilityOf(element), 60000);
     };
-
+    
     static getEnv(): Environment {
         const baseUrl = browser.params.baseUrl;
 

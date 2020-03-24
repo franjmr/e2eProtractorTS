@@ -31,6 +31,7 @@ describe("PA - Salary UI Properties Suite", function() {
     });
 
     afterAll(async (done)=>{
+        browser.ignoreSynchronization = false;
         await m4JsApiUtils.logoutPortal()
         done();
     });
