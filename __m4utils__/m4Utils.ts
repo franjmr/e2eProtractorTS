@@ -3,20 +3,23 @@ import { logging } from 'selenium-webdriver';
 import { Level } from 'selenium-webdriver/lib/logging';
 
 export class BrowserUtil {
+
+    private static TIMEOUT_DEFAULT = 10000;
+
     constructor() {}
 
-    static async element_WaitUntilReady(element: ElementFinder) {
-        await browser.wait(ExpectedConditions.presenceOf(element), 60000);
-        await browser.wait(ExpectedConditions.visibilityOf(element), 60000);
+    static async element_WaitUntilReady(element: ElementFinder, timeoutMillis?: number): Promise<void> {
+        await browser.wait(ExpectedConditions.presenceOf(element), timeoutMillis? timeoutMillis: BrowserUtil.TIMEOUT_DEFAULT);
+        await browser.wait(ExpectedConditions.visibilityOf(element), timeoutMillis? timeoutMillis: BrowserUtil.TIMEOUT_DEFAULT);
     }
 
-    static async element_WaitUntilNotInDom(element: ElementFinder) {
-        await browser.wait(ExpectedConditions.stalenessOf(element), 60000);
-        await browser.wait(ExpectedConditions.invisibilityOf(element), 60000);
+    static async element_WaitUntilNotInDom(element: ElementFinder, timeoutMillis?: number): Promise<void> {
+        await browser.wait(ExpectedConditions.stalenessOf(element), timeoutMillis? timeoutMillis: BrowserUtil.TIMEOUT_DEFAULT);
+        await browser.wait(ExpectedConditions.invisibilityOf(element), timeoutMillis? timeoutMillis: BrowserUtil.TIMEOUT_DEFAULT);
     };
     
-    static async element_WaitUntilBeClickable(element: ElementFinder) {
-        await browser.wait(ExpectedConditions.elementToBeClickable(element), 60000);
+    static async element_WaitUntilBeClickable(element: ElementFinder, timeoutMillis?: number): Promise<void> {
+        await browser.wait(ExpectedConditions.elementToBeClickable(element), timeoutMillis? timeoutMillis: BrowserUtil.TIMEOUT_DEFAULT);
     }
 
     static getEnv(): Environment {

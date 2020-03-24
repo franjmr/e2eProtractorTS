@@ -1,67 +1,67 @@
-import { element, by, ElementFinder } from "protractor";
+import { element, by } from "protractor";
 
 import { WebElement } from "selenium-webdriver";
 import { BrowserUtil } from "../../__m4utils__/m4Utils";
 
 export class EmployeeInformationTab {
 
-    private elemTab: ElementFinder;
-    private elemTabContainer: ElementFinder;
-    private elemTabContainerOtherItems: ElementFinder;
-    private elemButtonAssistant:  ElementFinder
+    private idTab: string;
+    private idTabContainer: string;
+    private idTabContainerOtherItems: string;
+    private idButtonAssistant:  string
 
-    constructor(idTab: string, idTabContainder: string, elemTabContainerOtherItems: string, idButtonAssistant: string) {
-        this.elemTab = element(by.id(idTab));
-        this.elemTabContainer = element(by.id(idTabContainder));
-        this.elemTabContainerOtherItems = element(by.id(elemTabContainerOtherItems));
-        this.elemButtonAssistant = element(by.id(idButtonAssistant));
+    constructor(idTab: string, idTabContainer: string, idTabContainerOtherItems: string, idButtonAssistant: string) {
+        this.idTab = idTab;
+        this.idTabContainer = idTabContainer;
+        this.idTabContainerOtherItems = idTabContainerOtherItems;
+        this.idButtonAssistant = idButtonAssistant;
     }
 
-    async waitForIsDisplayed_Tab(): Promise<void> {
-        await BrowserUtil.element_WaitUntilReady(this.elemTab);
-    }
-
-    async waitForIsDisplayed_TabContainer(): Promise<void> {
-        await BrowserUtil.element_WaitUntilReady(this.elemTabContainer);
-    }
-
-    async waitForIsDisplayed_TabContainerOtherItems(): Promise<void> {
-        await BrowserUtil.element_WaitUntilReady(this.elemTabContainerOtherItems);
-    }
-
-    async waitForIsDisplayed_ButtonUpdateInformation(): Promise<void> {
-        await BrowserUtil.element_WaitUntilReady(this.elemButtonAssistant);
-    }
-
-    async clickOn_Tab(): Promise<void> {
-        await BrowserUtil.element_WaitUntilBeClickable(this.elemTab);
-        await this.elemTab.click();
-    }
-
-    async clickOn_ButtonUpdateInformation(): Promise<void> {
-        await BrowserUtil.element_WaitUntilBeClickable(this.elemButtonAssistant);
-        await this.elemButtonAssistant.click();
-    }
-    
     async getElement_Tab(): Promise<WebElement> {
         await this.waitForIsDisplayed_Tab();
-        return this.elemTab;
+        return element(by.id(this.idTab))
     }
 
     async getElement_TabContainer(): Promise<WebElement> {
         await this.waitForIsDisplayed_TabContainer();
-        return this.elemTabContainer;
+        return element(by.id(this.idTabContainer))
     }
 
     async getElement_TabContainerOtherItems(): Promise<WebElement> {
         await this.waitForIsDisplayed_TabContainerOtherItems();
-        return this.elemTabContainerOtherItems;
+        return element(by.id(this.idTabContainerOtherItems))
     }
 
     async getElement_ButtonUpdateInformation(): Promise<WebElement> {
         await this.waitForIsDisplayed_TabContainerOtherItems();
         await this.waitForIsDisplayed_ButtonUpdateInformation();
-        return this.elemButtonAssistant;
+        return element(by.id(this.idButtonAssistant))
+    }
+    
+    async waitForIsDisplayed_Tab(): Promise<void> {
+        await BrowserUtil.element_WaitUntilReady(element(by.id(this.idTab)));
+    }
+
+    async waitForIsDisplayed_TabContainer(): Promise<void> {
+        await BrowserUtil.element_WaitUntilReady(element(by.id(this.idTabContainer)));
+    }
+
+    async waitForIsDisplayed_TabContainerOtherItems(): Promise<void> {
+        await BrowserUtil.element_WaitUntilReady(element(by.id(this.idTabContainerOtherItems)));
+    }
+
+    async waitForIsDisplayed_ButtonUpdateInformation(): Promise<void> {
+        await BrowserUtil.element_WaitUntilReady(element(by.id(this.idButtonAssistant)));
+    }
+
+    async clickOn_Tab(): Promise<void> {
+        const elemTab = await this.getElement_Tab();
+        await elemTab.click();
+    }
+
+    async clickOn_ButtonUpdateInformation(): Promise<void> {
+        const buttonUpdateInfo = await this.getElement_ButtonUpdateInformation();
+        await buttonUpdateInfo.click();
     }
 
 }

@@ -5,20 +5,16 @@ import { EmployeeInformationPage } from "../__pages__/employee_information.po";
 import visibilityJson from "../__mock__/visibility.json";
 import confJson from "../__mock__/conf.json";
 import confLocJson from "../__mock__/confLoc.json";
-import { Browser } from "selenium-webdriver";
 
 describe("PA - Salary UI Properties Suite", function() {
 
     let m4JsApiUtils: M4JsapiUtils;
-    let server: string;
     let empInfoPage: EmployeeInformationPage;
+
     const falseProbability: number[] = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9];
     
-    beforeAll(async(done)=>{
-        jasmine.DEFAULT_TIMEOUT_INTERVAL = 120000;
-
-        browser.ignoreSynchronization = true;
-        server = "http://jonsnow.meta4.com:13020";
+    beforeAll(async()=>{
+        let server = "http://jonsnow.meta4.com:13020";
         let appUser = "JCM_ESS";
         let passUser = "123";
         let lang = "2";
@@ -27,20 +23,16 @@ describe("PA - Salary UI Properties Suite", function() {
         m4JsApiUtils = new M4JsapiUtils(server, appUser, passUser, lang );
 
         await m4JsApiUtils.logonPortal();
-
-        done();
     });
 
-    afterAll(async (done)=>{
-        browser.ignoreSynchronization = false;
+    afterAll(async()=>{
         await m4JsApiUtils.logoutPortal()
-        done();
     });
     
     falseProbability.forEach(probability => {
         describe("PA - Salary UI probability '"+(probability * 100)+"%' of properties to be false ", function() {
             
-            beforeAll(async(done)=>{
+            beforeAll(async()=>{
                 JSON_Utils.setBooleanRandomValue("showTab", visibilityJson, probability);
                 JSON_Utils.setBooleanRandomValue("showSection", visibilityJson, probability);
                 JSON_Utils.setBooleanRandomValue("visible", confJson, probability);
@@ -53,30 +45,27 @@ describe("PA - Salary UI Properties Suite", function() {
                 await SessionStorageUtils.setItem("confLoc_1001M4EMPLOYEE", JSON.stringify(confLocJson));
                 
                 await BrowserUtil.cleanConsoleLog();
-
                 await empInfoPage.openAndWaitFor_PageIsReady();
                 
-                done();
             });
-            
+
             it("Should load Employee Information Page", async()=>{
                 const pageTitleElem = await empInfoPage.getPageTitle();
                 expect(await pageTitleElem.getText()).toEqual("EMPLOYEE PORTFOLIO");
             });
             
-            it("Should display container Tabs", async()=>{
+            xit("Should display container Tabs", async()=>{
                 await empInfoPage.waitFor_TabsAreDisplayed();
                 const containerTabs = await empInfoPage.getContainerTabs();
                 expect(await containerTabs.isDisplayed()).toBeTruthy();
             });
             
-            it("should display Tab Salary", async()=>{
+            xit("should display Tab Salary", async()=>{
                 const tabSalaryElem = await empInfoPage.empInfoTabSalary.getElement_Tab();
                 expect(await tabSalaryElem.isDisplayed()).toBeTruthy();
             });
             
-            it("should display Tab Salary Container", async()=>{
-                await browser.sleep(5000);
+            xit("When user click on Tab Salary should load Tab Salary Container", async()=>{
                 await empInfoPage.empInfoTabSalary.clickOn_Tab();
                 const tabSalaryCntnr = await empInfoPage.empInfoTabSalary.getElement_TabContainer();
                 const tabSalaryCntnrOtherElem = await empInfoPage.empInfoTabSalary.getElement_TabContainerOtherItems();
@@ -84,14 +73,12 @@ describe("PA - Salary UI Properties Suite", function() {
                 expect(await tabSalaryCntnrOtherElem.isDisplayed()).toBeTruthy();
             });
 
-            it("should display button to update information", async()=>{
-                await browser.sleep(5000);
+            xit("should display button to update information", async()=>{
                 const buttonUpdateInformation = await empInfoPage.empInfoTabSalary.getElement_ButtonUpdateInformation();
                 expect(await buttonUpdateInformation.isDisplayed()).toBeTruthy();
             });
 
-            it("should interact with update data popup", async(done)=>{
-                await browser.sleep(5000);
+            xit("should interact with update data popup", async()=>{
                 await empInfoPage.empInfoTabSalary.clickOn_ButtonUpdateInformation();
                 await empInfoPage.empInfoTabSalary.popupUpdateInformation.waitForm_PopUpReady();
                 await empInfoPage.empInfoTabSalary.popupUpdateInformation.clickOn_WidgetSelectAssistantLeft();
@@ -108,11 +95,9 @@ describe("PA - Salary UI Properties Suite", function() {
                     const actions = await empInfoPage.empInfoTabSalary.popupUpdateInformation.getElems_BlockActionContent();
                     expect(actions.length).toBeGreaterThanOrEqual(0);
                 }
-
-                done();
             });
 
-            it("should not load console log errors",async()=>{
+            xit("should not load console log errors",async()=>{
                 const browserConsoleLogErrors = await BrowserUtil.getConsoleLogError();
                 expect(browserConsoleLogErrors.length).toEqual(0);
             });

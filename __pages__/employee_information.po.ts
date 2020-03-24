@@ -1,6 +1,4 @@
-import { browser, element, by } from "protractor";
-
-import { WebElement } from "selenium-webdriver";
+import { element, by, ElementFinder } from "protractor";
 import { BrowserUtil } from "../__m4utils__/m4Utils";
 import { EmployeeInformationTabSalary } from "./employee_information/empInfoTabSalary.po";
 import { EmployeeInformationTabCv } from "./employee_information/empInfoTabCv.po";
@@ -36,17 +34,16 @@ export class EmployeeInformationPage extends Page{
     }
 
     async waitFor_ProgressBarIsDisplayed(){
-        const divProgressBar = element(by.id("divProgressBar"));
-        await BrowserUtil.element_WaitUntilReady(divProgressBar);
+        await BrowserUtil.element_WaitUntilReady(element(by.id("divProgressBar")));
     }
 
-    async getPageTitle(): Promise<WebElement> {
+    async getPageTitle(): Promise<ElementFinder> {
         const pageTitle = element(by.id("pageTitle"));
         await BrowserUtil.element_WaitUntilReady(pageTitle);
         return pageTitle;
     }
 
-    async getContainerTabs(): Promise<WebElement> {
+    async getContainerTabs(): Promise<ElementFinder> {
         const containerTabs = element(by.id("containerTabs"));
         await BrowserUtil.element_WaitUntilReady(containerTabs);
         return containerTabs;
