@@ -3,7 +3,6 @@ exports.config = {
     framework: 'jasmine',
     capabilities: { 
         browserName: 'chrome', chromeOptions: { args: [ "--headless", "--disable-gpu", "--window-size=1366,768"] } 
-        //browserName: 'chrome'
     },
     suites: {
         props: '__dist__/**/*props*spec.js',
