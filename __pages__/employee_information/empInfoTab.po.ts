@@ -1,6 +1,4 @@
-import { element, by } from "protractor";
-
-import { WebElement } from "selenium-webdriver";
+import { element, by, ElementFinder, browser } from "protractor";
 import { BrowserUtil } from "../../__m4utils__/m4Utils";
 
 export class EmployeeInformationTab {
@@ -17,23 +15,22 @@ export class EmployeeInformationTab {
         this.idButtonAssistant = idButtonAssistant;
     }
 
-    async getElement_Tab(): Promise<WebElement> {
+    async getElement_Tab(): Promise<ElementFinder> {
         await this.waitForIsDisplayed_Tab();
         return element(by.id(this.idTab))
     }
 
-    async getElement_TabContainer(): Promise<WebElement> {
+    async getElement_TabContainer(): Promise<ElementFinder> {
         await this.waitForIsDisplayed_TabContainer();
         return element(by.id(this.idTabContainer))
     }
 
-    async getElement_TabContainerOtherItems(): Promise<WebElement> {
+    async getElement_TabContainerOtherItems(): Promise<ElementFinder> {
         await this.waitForIsDisplayed_TabContainerOtherItems();
         return element(by.id(this.idTabContainerOtherItems))
     }
 
-    async getElement_ButtonUpdateInformation(): Promise<WebElement> {
-        await this.waitForIsDisplayed_TabContainerOtherItems();
+    async getElement_ButtonUpdateInformation(): Promise<ElementFinder> {
         await this.waitForIsDisplayed_ButtonUpdateInformation();
         return element(by.id(this.idButtonAssistant))
     }
@@ -56,11 +53,14 @@ export class EmployeeInformationTab {
 
     async clickOn_Tab(): Promise<void> {
         const elemTab = await this.getElement_Tab();
+        await BrowserUtil.element_WaitUntilBeClickable(elemTab);
         await elemTab.click();
     }
 
     async clickOn_ButtonUpdateInformation(): Promise<void> {
-        const buttonUpdateInfo = await this.getElement_ButtonUpdateInformation();
+        const buttonUpdateInfo:ElementFinder = await this.getElement_ButtonUpdateInformation();
+        await BrowserUtil.element_WaitUntilBeClickable(buttonUpdateInfo);
+        await browser.sleep(1000);  //Waitfor animation left to rigth
         await buttonUpdateInfo.click();
     }
 
