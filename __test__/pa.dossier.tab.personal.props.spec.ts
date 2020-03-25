@@ -4,8 +4,9 @@ import { EmployeeInformationPage } from "../__pages__/employee_information.po";
 import visibilityJson from "../__mock__/visibility.json";
 import confJson from "../__mock__/conf.json";
 import confLocJson from "../__mock__/confLoc.json";
+import { browser } from "protractor";
 
-describe("PA - Salary UI Properties Suite", function() {
+describe("PA - Personal UI Properties Suite", function() {
 
     let m4JsApiUtils: M4JsapiUtils;
     let empInfoPage: EmployeeInformationPage;
@@ -29,7 +30,7 @@ describe("PA - Salary UI Properties Suite", function() {
     });
     
     falseProbability.forEach(probability => {
-        describe("PA - Salary UI probability '"+(probability * 100)+"%' of properties to be false ", function() {
+        describe("PA - Personal UI probability '"+(probability * 100)+"%' of properties to be false ", function() {
             
             beforeAll(async()=>{
                 JSON_Utils.setBooleanRandomValue("showTab", visibilityJson, probability);
@@ -59,39 +60,48 @@ describe("PA - Salary UI Properties Suite", function() {
             });
             
             it("should display Tab Salary", async()=>{
-                const tabSalaryElem = await empInfoPage.empInfoTabSalary.getElement_Tab();
+                const tabSalaryElem = await empInfoPage.empInfoTabPersonal.getElement_Tab();
                 expect(await tabSalaryElem.isDisplayed()).toBeTruthy();
             });
             
             it("When user click on Tab Salary should load Tab Salary Container", async()=>{
-                await empInfoPage.empInfoTabSalary.clickOn_Tab();
-                const tabSalaryCntnr = await empInfoPage.empInfoTabSalary.getElement_TabContainer();
-                const tabSalaryCntnrOtherElem = await empInfoPage.empInfoTabSalary.getElement_TabContainerOtherItems();
+                await empInfoPage.empInfoTabPersonal.clickOn_Tab();
+                const tabSalaryCntnr = await empInfoPage.empInfoTabPersonal.getElement_TabContainer();
+                const tabSalaryCntnrOtherElem = await empInfoPage.empInfoTabPersonal.getElement_TabContainerOtherItems();
                 expect(await tabSalaryCntnr.isDisplayed()).toBeTruthy();
                 expect(await tabSalaryCntnrOtherElem.isDisplayed()).toBeTruthy();
             });
 
             it("should display button to update information", async()=>{
-                const buttonUpdateInformation = await empInfoPage.empInfoTabSalary.getElement_ButtonUpdateInformation();
+                const buttonUpdateInformation = await empInfoPage.empInfoTabPersonal.getElement_ButtonUpdateInformation();
                 expect(await buttonUpdateInformation.isDisplayed()).toBeTruthy();
             });
 
             it("should interact with update data popup", async()=>{
-                await empInfoPage.empInfoTabSalary.clickOn_ButtonUpdateInformation();
-                await empInfoPage.empInfoTabSalary.popupUpdateInformation.waitForm_PopUpReady();
-                await empInfoPage.empInfoTabSalary.popupUpdateInformation.clickOn_WidgetSelectAssistantLeft();
-                const options = await empInfoPage.empInfoTabSalary.popupUpdateInformation.getElems_WidgetSelectListOptionsAssistantLeft()
-                
-                for(let optIdx = 0; optIdx < options.length; optIdx++) {
-                    const elem = options[optIdx];
+                await empInfoPage.empInfoTabPersonal.clickOn_ButtonUpdateInformation();
+                await empInfoPage.empInfoTabPersonal.popupUpdateInformation.waitForm_PopUpReady();
 
-                    BrowserUtil.element_WaitUntilBeClickable(elem);
-                    await elem.click();
-                    await empInfoPage.waitForUntil_PageIsReady();
-                    await empInfoPage.empInfoTabSalary.popupUpdateInformation.getElem_AssistanteRigthContent();
+                await empInfoPage.empInfoTabPersonal.popupUpdateInformation.clickOn_WidgetSelectAssistantLeft();
+                const elemOptions = await empInfoPage.empInfoTabPersonal.popupUpdateInformation.getElems_WidgetSelectListOptionsAssistantLeft()
+                
+                for(let optIdx = 0; optIdx < elemOptions.length; optIdx++) {
+                    if(optIdx > 0){
+                        await empInfoPage.empInfoTabPersonal.popupUpdateInformation.clickOn_WidgetSelectAssistantLeft();
+                        await empInfoPage.empInfoTabPersonal.popupUpdateInformation.getElems_WidgetSelectListOptionsAssistantLeft()
+                    }
                     
-                    const actions = await empInfoPage.empInfoTabSalary.popupUpdateInformation.getElems_BlockActionContent();
-                    expect(actions.length).toBeGreaterThanOrEqual(0);
+                    const elemOption = elemOptions[optIdx];
+
+                    await BrowserUtil.element_WaitUntilBeClickable(elemOption);
+                    await elemOption.click();
+                    await empInfoPage.waitForUntil_PageIsReady();
+                    
+                    await empInfoPage.empInfoTabPersonal.popupUpdateInformation.getElem_BlockActions().then(async()=>{
+                        const actions = await empInfoPage.empInfoTabPersonal.popupUpdateInformation.getElems_BlockActionContent();
+                        expect(actions.length).toBeGreaterThan(0);
+                    }).catch(async()=>{
+                        expect(true).toBeTruthy();
+                    })
                 }
             });
 

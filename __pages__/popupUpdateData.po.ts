@@ -66,13 +66,13 @@ export class PopupUpdateData {
     }
 
     async getElem_BlockActions(): Promise<ElementFinder>{
-        await BrowserUtil.element_WaitUntilReady(this.elemBlockActionsContent);
+        await BrowserUtil.element_WaitUntilReady(this.elemBlockActionsContent, 6000);
         return this.elemBlockActionsContent;
     }
 
     async getElems_BlockActionContent(): Promise<ElementFinder[]>{
-        const elemBlockActions = await this.getElem_BlockActions();
-        return elemBlockActions.all(by.tagName("svg"));
+        const elemBlockActions : ElementFinder = await this.getElem_BlockActions();
+        return elemBlockActions.all(by.css("svg"));
     }
 
     async getElem_AssistanteLeftContent(): Promise<WebElement>{
