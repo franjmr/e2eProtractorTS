@@ -76,9 +76,11 @@ export class SessionStorageUtils {
     constructor(){}
 
     static setItem(itemKey: string, itemValue: string): Promise<boolean>{
-        return new Promise(resolve => {
+        return new Promise( resolve => {
             browser.executeScript("return window.sessionStorage.setItem('"+itemKey+"','"+itemValue+"');").then(()=>{
                 resolve(true);
+            }).catch(()=>{
+                resolve(false);
             });
         });
     }
@@ -87,6 +89,22 @@ export class SessionStorageUtils {
         return new Promise(resolve => {
             browser.executeScript('return window.sessionStorage.getItem("'+itemKey+'");').then((value:string)=>{
                 resolve(value);
+            });
+        });
+    }
+
+    static clear(): Promise<boolean>{
+        return new Promise(resolve => {
+            browser.executeScript('return window.sessionStorage.clear();').then(()=>{
+                resolve(true);
+            });
+        });
+    }
+
+    static removeItem(itemKey: string): Promise<boolean>{
+        return new Promise(resolve => {
+            browser.executeScript('return window.sessionStorage.removeItem("'+itemKey+'");').then(()=>{
+                resolve(true);
             });
         });
     }
@@ -108,7 +126,7 @@ export class JSON_Utils {
         
         for (const [k, v] of Object.entries(obj)) {
             if (k === id) {
-                obj[k] = Math.random() >= randomCompareValue? randomCompareValue: 0.5;
+                obj[k] = Math.random() >= (randomCompareValue? randomCompareValue: 0.5);
             } else if (typeof v === "object") {
                 JSON_Utils.setBooleanRandomValue(id, v, randomCompareValue);
             }
