@@ -95,7 +95,7 @@ class M4JsapiUtils {
     private async waitForIframeM4JsApi(): Promise<any>{
         console.log("Waiting for M4JSAPI...");
         await browser.wait(ExpectedConditions.presenceOf(element(by.id("m4jsapi"))), 120000);
-        console.log("M4jsapi Loaded Succes!");
+        console.log("M4JSAPI Loaded Success!");
     }
 
     // PUBLIC    
