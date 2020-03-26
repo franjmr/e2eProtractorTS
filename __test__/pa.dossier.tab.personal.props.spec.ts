@@ -67,7 +67,8 @@ describe("PA - Personal UI Properties Suite", function() {
             });
             
             it("When I click on the Personal Tab", async()=>{
-                await empInfoPage.empInfoTabPersonal.clickOn_Tab().then(()=>{
+                await empInfoPage.empInfoTabPersonal.clickOn_Tab().then(async()=>{
+                    await empInfoPage.waitForUntil_PageIsReady();
                     expect(true).toBeTruthy()
                 }).catch(()=>{
                     expect(false).toBeTruthy();
@@ -103,19 +104,14 @@ describe("PA - Personal UI Properties Suite", function() {
                         await elemOption.click();
                         await empInfoPage.waitForUntil_PageIsReady();
 
-                        const popUpError = element(by.id("m4-error"));
-                        await popUpError.isDisplayed().then(async()=>{
-                            expect(await popUpError.getText()).toBeFalsy;
-                        }).catch(async()=>{
-                            const noActions = element(by.cssContainingText('#assistantLeftContent', 'No actions are available for these data'));
-                        
-                            await noActions.isDisplayed().then( async () =>{
-                                expect(true).toBeTruthy();
-                            }).catch(async ()=>{
-                                const actions = await empInfoPage.empInfoTabPersonal.popupUpdateInformation.getElems_BlockActionContent();
-                                expect(actions.length).toBeGreaterThan(0);
-                            });
-                        })
+                        const noActionsLabel = element(by.cssContainingText('#assistantLeftContent', 'No actions are available for these data'));
+                        await noActionsLabel.isDisplayed().then( async () =>{
+                            expect(true).toBeTruthy();
+                        }).catch(async ()=>{
+                            const actions = await empInfoPage.empInfoTabPersonal.popupUpdateInformation.getElems_BlockActionContent();
+                            expect(actions.length).toBeGreaterThan(0);
+                        });
+
                     }catch(error){
                         console.warn("=== WARNING!- Loop Idx: "+optIdx+" - Error: "+error);
                         continue;
@@ -123,6 +119,11 @@ describe("PA - Personal UI Properties Suite", function() {
                         browser.sleep(500);
                     }
                 }
+            });
+
+            it("And the browser console is empty", async()=>{
+                const consoleError = await BrowserUtil.getConsoleLogError();
+                expect(consoleError.length).not.toBeGreaterThan(0);
             });
         });
     });

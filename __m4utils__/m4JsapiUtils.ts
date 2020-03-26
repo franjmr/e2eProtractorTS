@@ -112,6 +112,7 @@ class M4JsapiUtils {
     } 
 
     public async logonPortal(): Promise<boolean>{
+        await browser.manage().deleteAllCookies();
         await browser.get(this.server);
         await this.waitForIframeM4JsApi();
         const logon = await this.logonM4JsApi();

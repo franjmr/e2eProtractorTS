@@ -2,14 +2,16 @@ exports.config = {
     SELENIUM_PROMISE_MANAGER: false,
     framework: 'jasmine',
     multiCapabilities: [
-        { browserName: 'firefox', firefoxOptions: { args: ['--headless'] }, 'moz:firefoxOptions': { args: [ '--headless' ] } },
-        { browserName: 'chrome', chromeOptions: { args: [ "--headless", "--disable-gpu", "--window-size=1366,768"] } },
+        //{ browserName: 'firefox', firefoxOptions: { args: ['--headless'] }, 'moz:firefoxOptions': { args: [ '--headless' ] } },
+        { browserName: 'chrome', chromeOptions: { args: [ "--headless", "--disable-gpu" ] } },
+        //{ browserName: 'chrome'},
+        //{ browserName: 'firefox'}
     ],
     suites: {
         props: '__dist__/**/*personal*props*spec.js',
         ui: '__dist__/**/*ui*spec.js'
     },
-    specs: [ '__dist__/**/*spec.js' ],
+    specs: [ '__dist__/**/*personal*props*spec.js' ],
     directConnect: true,
     noGlobals: true,
     jasmineNodeOpts: {

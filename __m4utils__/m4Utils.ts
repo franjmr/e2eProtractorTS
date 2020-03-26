@@ -1,4 +1,4 @@
-import {browser, element, by, ExpectedConditions, protractor, ElementFinder} from 'protractor';
+import { browser, ExpectedConditions, ElementFinder } from 'protractor';
 import { logging } from 'selenium-webdriver';
 import { Level } from 'selenium-webdriver/lib/logging';
 
