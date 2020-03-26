@@ -1,11 +1,12 @@
 exports.config = {
     SELENIUM_PROMISE_MANAGER: false,
     framework: 'jasmine',
+    maxSessions: 1,
     multiCapabilities: [
         //{ browserName: 'firefox', firefoxOptions: { args: ['--headless'] }, 'moz:firefoxOptions': { args: [ '--headless' ] } },
-        { browserName: 'chrome', chromeOptions: { args: [ "--headless", "--disable-gpu" ] } },
-        //{ browserName: 'chrome'},
-        //{ browserName: 'firefox'}
+        //{ browserName: 'chrome', chromeOptions: { args: [ "--headless", "--disable-gpu", "--window-size=1366,768"] } },
+        { browserName: 'chrome' },
+        //{ browserName: 'firefox' },
     ],
     suites: {
         props: '__dist__/**/*personal*props*spec.js',

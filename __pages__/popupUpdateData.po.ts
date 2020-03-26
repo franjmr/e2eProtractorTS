@@ -36,7 +36,7 @@ export class PopupUpdateData {
     }
 
     async getElem_WidgetSelectAssistantLeft(): Promise<ElementFinder>{
-        const widgetSelect = element(by.css(".meta4-widget-select"));
+        const widgetSelect = element(by.css("#assistantLeftContent .meta4-widget-select"));
         await BrowserUtil.element_WaitUntilReady(widgetSelect);
         return widgetSelect;
     }
@@ -66,7 +66,7 @@ export class PopupUpdateData {
     }
 
     async getElem_BlockActions(): Promise<ElementFinder>{
-        await BrowserUtil.element_WaitUntilReady(this.elemBlockActionsContent, 6000);
+        await BrowserUtil.element_WaitUntilReady(this.elemBlockActionsContent);
         return this.elemBlockActionsContent;
     }
 
@@ -75,13 +75,17 @@ export class PopupUpdateData {
         return elemBlockActions.all(by.css("svg"));
     }
 
-    async getElem_AssistanteLeftContent(): Promise<WebElement>{
+    async getElem_AssistanteLeftContent(): Promise<ElementFinder>{
         await BrowserUtil.element_WaitUntilReady(this.elemAssistantLeftContent);
         return this.elemAssistantLeftContent;
     }
 
-    async getElem_AssistanteRigthContent(): Promise<WebElement>{
-        await BrowserUtil.element_WaitUntilReady(this.elemContainerExpanderAssistant);
+    async getElem_AssistanteRigthContent(): Promise<ElementFinder>{
+        await this.waitFor_AssistanteRigthContent();
         return this.elemContainerExpanderAssistant;
+    }
+
+    async waitFor_AssistanteRigthContent(): Promise<ElementFinder>{
+        await BrowserUtil.element_WaitUntilReady(this.elemContainerExpanderAssistant);
     }
 }

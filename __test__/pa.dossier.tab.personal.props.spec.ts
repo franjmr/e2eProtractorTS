@@ -110,20 +110,20 @@ describe("PA - Personal UI Properties Suite", function() {
                         }).catch(async ()=>{
                             const actions = await empInfoPage.empInfoTabPersonal.popupUpdateInformation.getElems_BlockActionContent();
                             expect(actions.length).toBeGreaterThan(0);
+                            for(let actionIdx = 0; actionIdx < actions.length; actionIdx++) {
+                                const elemAction = actions[actionIdx];
+                                await elemAction.click();
+                                await empInfoPage.waitForUntil_PageIsReady();
+                                browser.sleep(1000);
+                            }
                         });
-
                     }catch(error){
                         console.warn("=== WARNING!- Loop Idx: "+optIdx+" - Error: "+error);
                         continue;
                     }finally{
-                        browser.sleep(500);
+                        browser.sleep(1000);
                     }
                 }
-            });
-
-            it("And the browser console is empty", async()=>{
-                const consoleError = await BrowserUtil.getConsoleLogError();
-                expect(consoleError.length).not.toBeGreaterThan(0);
             });
         });
     });
