@@ -1,18 +1,19 @@
 exports.config = {
     SELENIUM_PROMISE_MANAGER: false,
     framework: 'jasmine',
-    capabilities: { 
-        browserName: 'chrome', chromeOptions: { args: [ "--headless", "--disable-gpu", "--window-size=1366,768"] } 
-    },
+    multiCapabilities: [
+        { browserName: 'firefox', firefoxOptions: { args: ['--headless'] }, 'moz:firefoxOptions': { args: [ '--headless' ] } },
+        { browserName: 'chrome', chromeOptions: { args: [ "--headless", "--disable-gpu", "--window-size=1366,768"] } },
+    ],
     suites: {
-        props: '__dist__/**/*props*spec.js',
+        props: '__dist__/**/*personal*props*spec.js',
         ui: '__dist__/**/*ui*spec.js'
     },
     specs: [ '__dist__/**/*spec.js' ],
     directConnect: true,
     noGlobals: true,
     jasmineNodeOpts: {
-        defaultTimeoutInterval: 120000
+        defaultTimeoutInterval: 600000
     },
     onPrepare: async function() {
         let jasmineReporters = require('jasmine-reporters');
@@ -34,8 +35,13 @@ exports.config = {
         // JASMINE-SPEC REPORTER
         const specReporter = new SpecReporter({
             spec: {
-              displayStacktrace: "pretty",
-              displayDuration: true
+                displayStacktrace: "pretty",
+                displayErrorMessages: true,
+                displayDuration: true,
+                displayFailed: true
+            },
+            summary: {
+                displayDuration: true
             }
         });
     

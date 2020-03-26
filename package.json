@@ -19,7 +19,7 @@
     "test:ui": "npm test -- --suite ui",
     "test:props": "npm test -- --suite props",
     "tsc": "tsc",
-    "webdriver-update": "webdriver-manager update --standalone=false --gecko=false"
+    "webdriver-update": "webdriver-manager update --standalone=false"
   },
   "dependencies": {
     "@types/jasmine": "^3.5.9",
