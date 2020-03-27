@@ -4,13 +4,14 @@ import { EmployeeInformationPage } from "../__pages__/employee_information.po";
 import visibilityJson from "../__mock__/visibility.json";
 import confJson from "../__mock__/conf.json";
 import confLocJson from "../__mock__/confLoc.json";
-import { element, by } from "protractor";
+import { element, by, browser } from "protractor";
+import browserLogs from "protractor-browser-logs";
 
 describe("PA - Tab Personal: Configuration Forms suite", function() {
 
     let m4JsApiUtils: M4JsapiUtils;
     let empInfoPage: EmployeeInformationPage;
-
+    
     const falseProbability: number[] = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
 
     beforeAll(async()=>{
@@ -32,7 +33,14 @@ describe("PA - Tab Personal: Configuration Forms suite", function() {
     falseProbability.forEach( async (probability) => {
         describe("PA - Personal UI probability '"+(probability * 100)+"%' of properties to be false ", function() {
             
+            let logs: browserLogs.BrowserLogs;
+
             beforeAll(async()=>{
+                logs = browserLogs(browser);
+                logs.reset();
+                logs.ignore(logs.or(logs.DEBUG, logs.INFO));
+                logs.ignore(logs.or(logs.LOG, logs.WARNING));
+
                 await SessionStorageUtils.clear();
 
                 JSON_Utils.setBooleanRandomValue("showTab", visibilityJson, probability);
@@ -116,13 +124,20 @@ describe("PA - Tab Personal: Configuration Forms suite", function() {
                             for(let actionIdx = 0; actionIdx < actions.length; actionIdx++) {
                                 await BrowserUtil.element_clickOn(actions[actionIdx]);
                                 await empInfoPage.waitForUntil_PageIsReady();
+                                await browser.sleep(500);
                             }
                         });
                     }catch(error){
                         console.warn("=== WARNING!- Loop Idx: "+optIdx+" - Error: "+error);
                         continue;
+                    }finally{
+                        await browser.sleep(1000);
                     }
                 }
+            });
+
+            it("And should not appear message errors in the browser console", ()=>{
+                return logs.verify();
             });
         });
     });
