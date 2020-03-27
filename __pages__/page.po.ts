@@ -7,14 +7,21 @@ export class Page {
 
     server : string;
     pageUrl : string;
+    fullUrl: string;
 
     constructor(server: string, pageUrl:string){
         this.server = server;
         this.pageUrl = pageUrl;
+        this.fullUrl = this.server.concat(this.pageUrl)
     }
 
-    async open():Promise<any>{
-        await browser.get(this.server.concat(this.pageUrl), this.TIMEOUT_DEFAULT);
+    async open(): Promise<any>{
+        await browser.get(this.fullUrl, this.TIMEOUT_DEFAULT);
+    }
+
+    async navigateToAndWaitFor_PageIsReady(): Promise<any>{
+        await browser.navigate().to(this.fullUrl);
+        await this.waitForUntil_PageIsReady();
     }
 
     async openAndWaitFor_PageIsReady(): Promise<void>{
@@ -23,7 +30,7 @@ export class Page {
     }
 
     async refreshAndWaitFor_PageIsReady(): Promise<void>{
-        await browser.refresh(this.TIMEOUT_DEFAULT);
+        await browser.navigate().refresh();
         await this.waitForUntil_PageIsReady();
     }
 

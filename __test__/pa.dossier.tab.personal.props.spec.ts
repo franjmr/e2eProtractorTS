@@ -4,15 +4,15 @@ import { EmployeeInformationPage } from "../__pages__/employee_information.po";
 import visibilityJson from "../__mock__/visibility.json";
 import confJson from "../__mock__/conf.json";
 import confLocJson from "../__mock__/confLoc.json";
-import { browser, element, by, ElementFinder } from "protractor";
+import { element, by } from "protractor";
 
-describe("PA - Personal UI Properties Suite", function() {
+describe("PA - Tab Personal: Configuration Forms suite", function() {
 
     let m4JsApiUtils: M4JsapiUtils;
     let empInfoPage: EmployeeInformationPage;
 
     const falseProbability: number[] = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
-    
+
     beforeAll(async()=>{
         let server = "http://jonsnow.meta4.com:13020";
         let appUser = "JCM_ESS";
@@ -46,7 +46,7 @@ describe("PA - Personal UI Properties Suite", function() {
                 await SessionStorageUtils.setItem("conf_1001M4EMPLOYEE", JSON.stringify(confJson));
                 await SessionStorageUtils.setItem("confLoc_1001M4EMPLOYEE", JSON.stringify(confLocJson));
                 
-                await empInfoPage.openAndWaitFor_PageIsReady();
+                await empInfoPage.navigateToAndWaitFor_PageIsReady();
                 await empInfoPage.refreshAndWaitFor_PageIsReady();
             });
 
@@ -84,10 +84,16 @@ describe("PA - Personal UI Properties Suite", function() {
                 expect(await buttonUpdateInformation.isDisplayed()).toBeTruthy();
             });
 
-            it("And I should check all possible data modification options", async()=>{
-                await empInfoPage.empInfoTabPersonal.clickOn_ButtonUpdateInformation();
-                await empInfoPage.empInfoTabPersonal.popupUpdateInformation.waitForm_PopUpReady();
+            it("And I should click on Update Information Button", async()=>{
+                await empInfoPage.empInfoTabPersonal.clickOn_ButtonUpdateInformation().then(async()=>{
+                    await empInfoPage.waitForUntil_PageIsReady();
+                    expect(true).toBeTruthy()
+                }).catch(()=>{
+                    expect(false).toBeTruthy();
+                });
+            });
 
+            it("And I should select all possible data modification options", async()=>{
                 await empInfoPage.empInfoTabPersonal.popupUpdateInformation.clickOn_WidgetSelectAssistantLeft();
                 const elemOptions = await empInfoPage.empInfoTabPersonal.popupUpdateInformation.getElems_WidgetSelectListOptionsAssistantLeft()
                 
@@ -97,31 +103,24 @@ describe("PA - Personal UI Properties Suite", function() {
                             await empInfoPage.empInfoTabPersonal.popupUpdateInformation.clickOn_WidgetSelectAssistantLeft();
                             await empInfoPage.empInfoTabPersonal.popupUpdateInformation.getElems_WidgetSelectListOptionsAssistantLeft()
                         }
-                        
-                        const elemOption = elemOptions[optIdx];
-    
-                        await BrowserUtil.element_WaitUntilBeClickable(elemOption);
-                        await elemOption.click();
+
+                        await BrowserUtil.element_clickOn(elemOptions[optIdx])
                         await empInfoPage.waitForUntil_PageIsReady();
 
                         const noActionsLabel = element(by.cssContainingText('#assistantLeftContent', 'No actions are available for these data'));
-                        await noActionsLabel.isDisplayed().then( async () =>{
-                            expect(true).toBeTruthy();
+                        await noActionsLabel.isDisplayed().then( async (isDisplayed) =>{
+                            expect(isDisplayed).toBeTruthy();
                         }).catch(async ()=>{
                             const actions = await empInfoPage.empInfoTabPersonal.popupUpdateInformation.getElems_BlockActionContent();
                             expect(actions.length).toBeGreaterThan(0);
                             for(let actionIdx = 0; actionIdx < actions.length; actionIdx++) {
-                                const elemAction = actions[actionIdx];
-                                await elemAction.click();
+                                await BrowserUtil.element_clickOn(actions[actionIdx]);
                                 await empInfoPage.waitForUntil_PageIsReady();
-                                browser.sleep(1000);
                             }
                         });
                     }catch(error){
                         console.warn("=== WARNING!- Loop Idx: "+optIdx+" - Error: "+error);
                         continue;
-                    }finally{
-                        browser.sleep(1000);
                     }
                 }
             });

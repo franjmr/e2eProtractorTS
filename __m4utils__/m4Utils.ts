@@ -26,6 +26,11 @@ export class BrowserUtil {
         await browser.wait(ExpectedConditions.elementToBeClickable(element), timeoutMillis? timeoutMillis: BrowserUtil.TIMEOUT_DEFAULT);
     }
 
+    static async element_clickOn(element: ElementFinder, timeoutMillis?: number): Promise<void> {
+        await browser.wait(ExpectedConditions.elementToBeClickable(element), timeoutMillis? timeoutMillis: BrowserUtil.TIMEOUT_DEFAULT);
+        await element.click();
+    }
+
     static getEnv(): Environment {
         const baseUrl = browser.params.baseUrl;
 
